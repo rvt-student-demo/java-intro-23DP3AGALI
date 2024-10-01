@@ -13,9 +13,16 @@ public class App
 
         System.out.println("Ievadi jebkuru pozitivu skaitlu: ");
         int user = Integer.valueOf(scanner.nextLine());
-        for (int i = 0; i <= user; i++) {
-            System.out.println(i);
+        
+        int sum = 0;
+
+        for (int i = 1; i <= user; i++) {
+            sum += i;
         }
+
+        System.out.println(sum);
+        
+        
 
 
 
