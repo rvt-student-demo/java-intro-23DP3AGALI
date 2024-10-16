@@ -1,33 +1,27 @@
 package lv.rvt;
 import java.util.Scanner;
+import java.util.ArrayList;
 public class App 
 {
    
     
-
+   public static void main(String[] args) {
+    ArrayList<String> wordList = new ArrayList<>();
+    Scanner scanner = new Scanner(System.in);
     
-   
-   
-        
-        public static void main(String[] args) {
-            /*    
-            Star.printStars(5);
-                System.out.println(" "); 
+    while(true){
+      String sk = scanner.nextLine();
+      wordList.add(sk);
+      if(sk == ""){
+        break;
+      }
+    }
 
-                Star.printStars(3);
-                System.out.println(" "); 
-        
-                Star.printStars(9);
-                System.out.println(" "); 
-        */
-        
-            
-            // Star.Tringle(5);
-            
-                // Star.Square(5);
+    System.out.println(wordList.get(2));
+    
 
-            Star.rectangle(16,3);
-            }
+
+  }
         
         
 
