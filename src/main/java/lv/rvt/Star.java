@@ -11,13 +11,31 @@ public class Star {
         
     }
 
-    public static void Tringle(int number) {
+    public static void printSpaces(int number) {
         for(int i=0; i<number;i++){
-        printStars(i);
+        System.out.print(" ");
+        // call the print command n times
+        // in the end print a line break with the comand
+        // System.out.println("");
+        }
+        
+    }
+
+    public static void Tringle(int number) {
+        int b=number*(-1);
+        int x=1;
+        for(int i=number; i>=b;i--){
+        if (x>number) {
+            break;
+        }
+            printSpaces(i);
+            printStars(x);
         System.out.println();
         // call the print command n times
         // in the end print a line break with the comand
         // System.out.println("");
+        x++;
+        
         }
         
     }
